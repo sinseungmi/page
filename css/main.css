@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Gothic+A1:wght@100&family=Montserrat:wght@400;800;900&display=swap');
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/******************************* Home page **************************/
+
+body { /* 빈 공간 채우기 */
+  margin: 0;
+  overflow-x: hidden; overflow-y: auto; /* 가로 스크롤 없애기 */
+  /* 드래그 방지 */
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+.page {  /* 전체화면 사이즈 맞추기*/
+  /* width: 100vw;
+  height: 100vh; */
+  max-width: 100%;
+  height: 1000px;
+  margin: auto;
+}
+
+#sky1 {  /* 하늘 사진 */
+  width: 325px;
+  height: 290px;
+  margin-bottom: -5px;
+}
+
+#main {  /* 사진이랑 메뉴들 들어가는 박스 */
+  position: relative;
+  top: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  margin: auto;
+  width: 1000px;
+}
+
+#main > * {
+  border: solid 5px white;
+}
+
+#introduce {  /* 소개하는 문구 */
+  font-size: 18px;
+  /* position: relative; */
+  /* top: 185px; */
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+  color: rgb(150, 150, 150);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  line-height: 15;
+}
+
+.menu {
+  text-align: center;
+}
+ 
+.menu_font {  /* 어바웃,스킬,컨택트 글자*/
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(184, 229, 255);
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 270px;
+}
+
+.bold {  /* 어바웃,스킬,컨택트 앞글자*/
+  font-weight: 800;
+  font-size: 50px;
+}
+
+/* 글자에 마우스 올릴시 글자 크게 */
+.link-6 a:hover {
+  -webkit-transform: scale(1.15);
+     -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+       -o-transform: scale(1.15);
+          transform: scale(1.15);  
+}
+
+.link-6 a {
+  -webkit-transition: all 0.1s linear;
+          transition: all 0.1s linear;
+}
+
+.link-6 a {
+  text-transform: uppercase;
+  /* font-size: 36px; */
+  color: rgb(255, 255, 255);
+  /* text-decoration: none; */
+  /* position: relative; */
+  display: block;
+}
+
+[class^="link-"] {
+  display: inline-block;
+  /* margin: 2em */
+}
+
+
+@-webkit-keyframes heartbeat {
+  0% { -webkit-transform: scale(1); }
+  10% { -webkit-transform: scale(1.1); }
+  20% { -webkit-transform: scale(1); }
+  30% { -webkit-transform: scale(1.1); }
+  40% { -webkit-transform: scale(1); }
+}
+
+@-webkit-keyframes heartbeat-x {
+  0% { -webkit-transform: scaleX(0); }
+  10% { -webkit-transform: scaleX(1); }
+  20% { -webkit-transform: scaleX(0); }
+  30% { -webkit-transform: scaleX(1); }
+  40% { -webkit-transform: scaleX(0); }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.1); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  40% { transform: scale(1); }
+}
+
+@keyframes heartbeat-x {
+  0% { transform: scaleX(0); }
+  10% { transform: scaleX(1); }
+  20% { transform: scaleX(0); }
+  30% { transform: scaleX(1); }
+  40% { transform: scaleX(0); }
+}
+
+
+/*************************** ABOUT ME Page *******************************/
+.s1_arrow{
+  display:inline-block; position:relative; top:28px; margin-left:-10px; text-align:center; animation:arrow_down 1.5s infinite;
+  transform: rotate(-90deg);}
+.scroll-arrow {width:15px; height:15px; border-right: 3px solid white; border-bottom: 3px solid white;
+transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);  -ms-transform: rotate(45deg);
+animation: arrow-wave 1s infinite; animation-direction: alternate;}
+.scroll-arrow:nth-child(1) {animation-delay: 0.1s;}
+.scroll-arrow:nth-child(2) {margin-top:6px; animation-delay: 0.2s;}
+.scroll-arrow:nth-child(3) {margin-top:6px; animation-delay: 0.3s;}
+@keyframes arrow-wave {
+0% {opacity: 0;}
+50% {opacity: .5;}
+100% {opacity: 1;}
+}
+@keyframes arrow_down{
+0%{top:28px;}
+50%{top:40px;}
+100%{top:28px;}
+}
+
+#arrow {
+  margin: auto;
+  line-height: 30;
+} 
+
+#page2_content {
+  display: grid;
+  width: 1200px;
+  height: 600px;
+  grid-template-columns: 1fr 10px 1fr;
+  margin: auto;
+  padding-top: 60px;
+}
+
+#page2 {  /* 전체화면 사이즈 맞추기 and 어바웃미 백그라운드 색깔 설정  */
+  background-color: rgb(184, 229, 255);
+  text-align: center;
+}
+
+#about_me {  /* about me 글씨 설정 */
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 100px;
+  padding-top: 110px;
+  font-weight: bold;
+  margin :auto;
+  width: 1200px;
+}
+
+.side_info {  /* 내 사진 담은 정보박스 */
+  background-color: rgb(255, 252, 245);
+  width: 430px;
+  height: 485px;
+  text-align: center;
+  margin: auto;
+  margin-top: 18px;
+}
+
+/* 내 사진 */
+#seungmi {  
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 400px;
+}
+
+#academic_background {
+  margin-top: 5px;
+  background-color: rgb(255, 252, 245);
+  width: 470px;
+  height: 520px;
+  margin: auto;
+  margin-left: 82.5px;
+}
+
+.profile_text {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #e3fdf5;
+  background: linear-gradient(-225deg, #a0ffe3 0%, #ffc8f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#profile {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(116, 116, 116);
+  line-height: 30px;
+  font-family: 'IBMPlexSansKR-Regular';
+}
+
+#p_line {
+  border-bottom: solid 4px #e4e4e4;
+  /* margin-right: 30px; */
+  margin-bottom: 20px;
+}
+
+.p_two {
+  text-align: right;
+}
+
+
+/* -------------------------- 사이드바 스타일 ----------------------- */ 
+
+#open {
+  position: fixed; /* 사이드 메뉴 고정 */
+  z-index: 2;  
+  text-align: left; /* 텍스트 가운데로 */
+  top: 15px; /* 포지션 고정 시 위치 : 가장 위부터 띄울 길이  */
+  left: 10px; /* 포지션 고정 시 위치 : 가장 왼쪽부터 띄울 길이 */
+}
+
+.sidebar {  /* 사이드바 창 */
+  width: 300px;
+  height: 100%;
+  background-color: rgb(0,154,200);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: -300px;
+  transition: all .50s;
+  overflow-x: hidden;
+  padding-top: 120px;
+}
+
+.sidebar a {
+  font-family: 'Montserrat', sans-serif;
+  cursor:pointer;
+  padding: 10px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  color: #000;
+}
+
+input[id="menuicon"]:checked + label + div {
+  left: 0;
+}
+
+
+/*-------------------------여기까지 사이드 바-----------------------------------------*/
+/*-------------------------사이드바의 움직이는 메뉴버튼---------------------*/
+
+input[id="menuicon"] {
+  display: none;
+}
+input[id="menuicon"] + label{
+  display: block;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+input[id="menuicon"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background:rgb(0,154,200);
+  transition: all .35s;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="menuicon"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  background:rgb(255, 255, 255);
+}
+input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity: 0;
+  background:rgb(255, 255, 255);
+}
+input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  background:rgb(255, 255, 255);
+}
+
+/*-------------------------여기까지 움직이는 메뉴버튼---------------------*/
+
+/*************************** SKILL Page *******************************/
+
+
+#page3 {   /* 글자들 중앙에 놓기 */
+  display: flex;
+  justify-content: center; 
+  align-items: center;                   /*#beefff*/
+  background: linear-gradient(200deg, #ffffff 45%, rgb(184, 229, 255) 60%); /* 대각선으로 div 색칠하기*/
+}
+
+#skill {  
+  position: relative;
+  left: 350px;
+  top: 50px;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  color: #beefff;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index: 0;
+}
+
+/*-------------------------------능력치들 여기저기 분산 시키기---------------------*/
+.ability_font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(141, 141, 141);
+
+}
+
+.one {
+  position: relative;
+  bottom: 150px;
+  left: 320px;
+  text-align: center;
+}
+
+.two {
+  position: relative;
+  top: 100px;
+  right: 200px; 
+  text-align: center;
+}
+
+/*-----------------------------여기까지 능력치들 분산---------------------*/
+/*-----------------------------원형 그래프 설정--------------------------*/
+canvas[style] { 
+  width:140px !important;
+  height:140px !important; 
+}
+
+.a1{
+  margin:100px 0;
+  display:flex;
+}
+
+.second {
+  position:relative;
+  width:140px;
+  height:140px;
+  margin-left:35px;
+}
+.second>canvas{
+  width:100%;
+}
+.second > strong {
+  position:absolute; 
+  top:50%; 
+  left:50%; 
+  transform:translatex(-50%) translatey(-50%);
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*--------------------------여기까지 원형 그래프 설정--------------------------*/
+/*--------------------------스킬 글자 거품 뽀글뽀글--------------------------*/
+
+.center-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.center-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Essential CSS - Makes the effect work */
+
+.bubbles {
+  display: inline-block;
+  font-family: arial;
+  position: relative;
+}
+
+  .individual-bubble {
+    position: absolute;
+  border-radius: 100%;
+  bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+/*--------------------------여기까지 스킬 글자 거품 뽀글뽀글--------------------------*/
+/*************************** PORTFOLIO Page *******************************/
+
+#portfolio {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 100px;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin :auto;
+  width: 1200px;
+  color: rgb(184, 229, 255);
+  text-align: right;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.slide {
+  height: 600px;   /*80vh*/
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  filter: blur(4px);
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 50px; /*clamp(0.5rem, 5vw, 5rem);*/
+  bottom: -70px;
+  margin: 0;
+  opacity: 0;
+  background-color: #e3fdf5;
+  background-image: linear-gradient(-225deg, #a0ffe3 0%, #ffc8f4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slide.active {
+  flex: 10;
+  filter: blur(0px);
+  box-shadow: 0px 0px 5px 5px #d9f4fd;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media screen and (max-width: 50rem) {
+  .slide h3 {
+    left: 5px;
+  }
+}
+
+/*************************** CONTACT Page *******************************/
+
+#page5 {
+  /* height: 920px; */
+  margin: 0;
+  background-color: rgb(184, 229, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+text {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 21px;
+  fill: white;
+  font-weight: bold;
+}
+
+svg {
+  height: 920px;
+  float: left;
+}
+
+#detail {
+  position: relative;
+  top: 380px;
+  right: 725px;
+  width: 1532px;
+  margin: auto 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  line-height:60px;
+}
+
+a {
+  text-decoration:none;
+}
+
+#contact {
+  width: 1000px;
+  height: 920px;
+}
+
+.git:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#sky1:hover {
+	opacity: 0.5;
+  transition: opacity 0.4s ease-in 0.1s;
+}

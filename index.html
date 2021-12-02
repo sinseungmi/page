@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/main.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>  -->
+
+</head>
+<body> 
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <div id="content">
+        <!-- 사이드 메뉴창-->
+        <div id="open" onclick="">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <a id="btn0" class="side_click">Home</a>
+                <a id="btn1" class="side_click">About</a>
+                <a id="btn2" class="side_click">Skill</a>
+                <a id="btn3" class="side_click">Portfolio</a>
+                <a id="btn4" class="side_click">Contact</a>
+            </div>
+        </div>
+
+        <!-- HOME page-->
+        <div data-aos="zoom-in" data-aos-duration="1500">
+            <div id="page1" class="page">
+                <div id="introduce">미래를 향해 나아가는 개발자 신승미입니다</div>
+                <div id="main">
+                    <div class="menu">
+                            <img id="sky1" src="./image/하늘1 (1).jpg" alt="하늘">
+                    </div>
+                    <div class="menu_font">
+                        <div id="m_btn1" class="link-6"><a href="javascript:void(0)"><span class="bold">A</span>BOUT</a></div> 
+                    </div>
+                    <div class="menu">
+                        <img id="sky1" src="./image/하늘1 (3).jpg" alt="하늘">
+                    </div>
+                    <div id="m_btn2" class="menu_font link-6"><a href="javascript:void(0)"><span class="bold">S</span>KILL</a></div>
+                    <div id="m_btn3" class="menu_font link-6"><a href="javascript:void(0)"><span class="bold">P</span>ORTFOLIO</a></div>
+                    <div id="m_btn4" class="menu_font link-6"><a href="javascript:void(0)"><span class="bold">C</span>ONTACT</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ABOUT ME page -->
+        <a name="target"> </a>
+        <div id="page2" class="page">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
+            <div id="about_me">ABOUT ME.</div>
+        </div>
+        <div id="page2_content">
+            <div data-aos="fade-right">
+                <div class="side_info">
+                    <img id="seungmi" src="./image/턱괴는사진.jpg">
+                </div>
+            </div>
+            <div id="arrow" >
+                <div class="s1_arrow">
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+            <div data-aos="fade-left">
+                <div id="academic_background">
+                    <div id="profile">
+                        <div class="profile_text">PROFILE</div>
+                        <div id="p_line"></div>
+                        신승미 (SIN SEUNGMI) <br>
+                        1996.09.25 <br>
+                        방송통신대 컴퓨터과학과 재학 중 <br>
+                        마이크로 서비스 기반 응용 sw개발자 양성 <br>
+                        2021.03 ~ 2021.09 (6개월)
+                        <div class="profile_text p_two">VISION</div>
+                        <div id="p_line"></div>
+                        고객은 편하게 이용할 수 있도록, 개발자는 편리하게 유지할 수 있도록 
+                        만능형 웹사이트를 만드는 백엔드 개발자 신승미가 되겠습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SKILL page -->
+    <div id="page3" class="page">
+        <div data-aos="fade-up-right">
+            <span id="skill" class="bubbles">SKILL</span>
+        </div>
+        
+        <div class="a1 active-on-visible" data-active-on-visible-callback-func-name="Circle__run">
+            <div id="html" class="second circle one" circleProgress='90'>
+                <span class="ability_font">JAVA</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="css" class="second circle one" circleProgress='90'>
+                <span class="ability_font">JSP</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="js" class="second circle one" circleProgress='80'>
+                <span class="ability_font">Spring</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="java" class="second circle one" circleProgress='70'>
+                <span class="ability_font">SQL</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="jsp" class="second circle one" circleProgress='70'>
+                <span class="ability_font">GitHub</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="spring" class="second circle two" circleProgress='60'>
+                <span class="ability_font">HTML</span>
+                <strong class="circle-percent"></strong> 
+            </div> 
+            
+            <div id="sql" class="second circle two" circleProgress='60'>
+                <span class="ability_font">CSS</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="github" class="second circle two" circleProgress='60'>
+                <span class="ability_font">JavaScript</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+            <div id="linux" class="second circle two" circleProgress='50'>
+                <span class="ability_font">Linux</span>
+                <strong class="circle-percent"></strong>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/circula_ graph.js"></script>
+
+    <!-- 스킬에 물방울 뽀글뽀글 -->
+    <div class="center-outer">
+        <div class="center-inner">
+        </div>
+    </div>
+    <script src="./js/skill_bubbles.js"></script>
+    
+    <!-- portfolio page -->
+    <div id="page4" class="page">
+        <div data-aos="zoom-in-down">
+            <div id="portfolio">PORTFOLIO.</div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="container">
+                <div class="slide" style="background-image: url(./image/카페메인.png);">
+                    <a href="https://1drv.ms/p/s!AlvVtV25DvJLtkgMw_kky7k4VZ34?e=bzi8nI"><h3>Cafe POS<span style="font-size: 20px;">_more info?</span></h3>
+                    </a>
+                </div>
+                <div class="slide" style="background-image: url(./image/브로컬리메인.png);">
+                    <a href="https://1drv.ms/p/s!AlvVtV25DvJLxXqoxm6WX0Y8AxJ1?e=vqlr7V"><h3>Brokurly<span style="font-size: 20px;">_more info?</span></h3></a>
+                </div>
+                <div class="slide" style="background-image: url(./image/개인프로젝트.png);">
+                    <h3>My WebPage</h3>
+                </div>
+                <!-- <h6>글씨를 누르면 ppt로 이동합니다.</h6> -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/slide.js"></script>
+    
+    <!-- contact page -->
+    <div id="page5" class="page">
+        <div data-aos="zoom-out" data-aos-duration="1200" style="color: white;">
+            <div id="contact">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-20 0 500 500">
+                    <defs>
+                        <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                            <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
+                        </path>
+                        <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
+                            <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
+                        </path>
+                    </defs>
+                    <text dy="5" textLength="1220">
+                        <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
+                        <textPath xlink:href="#textcircle_top">Sweet ~ Contact</textPath>
+                        <textPath xlink:href="#textcircle_bottom">Coding ~ 2021</textPath>
+                    </text>
+                </svg>
+                <div id="detail">
+                    010.7303.9730<br>
+                    tlstmdal3@naver.com <br>
+                    <a class="git" href="https://github.com/sinseungmi" style="color: white;">GitHub</a>
+                </div>
+            </div>
+            본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/side_movement.js"></script>
+<script src="./js/main_movement.js"></script>
+<script src="./js/scroll.js"></script>
+</html>

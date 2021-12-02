@@ -1,0 +1,28 @@
+.open {
+    animation: open_btn_ani 0.6s 0.1s forwards ease-in-out;
+}
+
+.close {
+    animation: close_btn_ani 0.6s forwards ease-in-out;
+}
+
+@keyframes open_btn_ani {
+    0% {
+        top: 15px; 
+        left: 10px;
+    }
+
+    100% {
+        left: 180px;
+    }
+}
+@keyframes close_btn_ani {
+    0% {
+        top: 15px; 
+        left: 180px;
+    }
+
+    100% {
+        left: 10px;
+    }
+}
